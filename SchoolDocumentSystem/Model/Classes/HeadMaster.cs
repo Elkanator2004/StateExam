@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Roles
+    public class HeadMaster : User
     {
+        public HeadMaster()
+        {
+
+        }
     }
 }

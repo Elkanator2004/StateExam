@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+oxubefpLO2XRrmT3BxsYZAowKaOWZgZUITtNnG5McA3iDRpxh8WXTQc+hGeaB9gho+NSXJD4eVIjV8VFGxW2Q==",
+  "dgSpecHash": "Wk337YcFSQO1Ug2TQ0w3RbbY5Qv8yTiP1WUIkSlA6hSBfyGxnTMXm1kX4GwyE5FagKqVgC/hlvHB6lwJHuW5hQ==",
   "success": true,
-  "projectFilePath": "C:\\projects\\StateExam\\Classes\\Model.csproj",
+  "projectFilePath": "C:\\projects\\SchoolDocumentSystem\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

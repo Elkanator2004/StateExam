@@ -1663,11 +1663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\StateExam\\Classes\\Model.csproj",
+      "projectUniqueName": "C:\\projects\\SchoolDocumentSystem\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\projects\\StateExam\\Classes\\Model.csproj",
+      "projectPath": "C:\\projects\\SchoolDocumentSystem\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\StateExam\\Classes\\obj\\",
+      "outputPath": "C:\\projects\\SchoolDocumentSystem\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

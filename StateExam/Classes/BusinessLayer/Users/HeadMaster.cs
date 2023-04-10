@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Document
+    public class HeadMaster : User
     {
+        public HeadMaster()
+        {
+
+        }
     }
 }
