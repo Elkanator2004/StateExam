@@ -19,14 +19,11 @@ namespace DataLayer.Migrations
                 .HasAnnotation("ProductVersion", "6.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("BusinessLayer.DocumentHeadMaster", b =>
+            modelBuilder.Entity("BusinessLayer.Document", b =>
                 {
                     b.Property<string>("EntryNumber")
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
-
-                    b.Property<DateTime>("DateFrom")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime>("DateReceived")
                         .HasColumnType("datetime(6)");
@@ -34,13 +31,7 @@ namespace DataLayer.Migrations
                     b.Property<DateTime>("DateSigned")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime>("DateTo")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("Days")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Grade")
+                    b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -63,54 +54,9 @@ namespace DataLayer.Migrations
 
                     b.HasIndex("SenderId");
 
-                    b.ToTable("DocumentsHeadMaster");
-                });
+                    b.ToTable("Documents");
 
-            modelBuilder.Entity("BusinessLayer.DocumentTeacher", b =>
-                {
-                    b.Property<string>("EntryNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<DateTime>("DateFrom")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("DateReceived")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("DateSigned")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("DateTo")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("Days")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Grade")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ReceiverId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("SenderId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
-                    b.HasKey("EntryNumber");
-
-                    b.HasIndex("ReceiverId");
-
-                    b.HasIndex("SenderId");
-
-                    b.ToTable("DocumentsTeachers");
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Document");
                 });
 
             modelBuilder.Entity("BusinessLayer.User", b =>
@@ -326,26 +272,51 @@ namespace DataLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("BusinessLayer.DocumentHeadMaster", b =>
+            modelBuilder.Entity("BusinessLayer.SevenDays", b =>
                 {
-                    b.HasOne("BusinessLayer.User", "Receiver")
-                        .WithMany()
-                        .HasForeignKey("ReceiverId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasBaseType("BusinessLayer.Document");
 
-                    b.HasOne("BusinessLayer.User", "Sender")
-                        .WithMany("DocumentsHeadMaster")
-                        .HasForeignKey("SenderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<DateTime>("DateFrom")
+                        .HasColumnType("datetime(6)");
 
-                    b.Navigation("Receiver");
+                    b.Property<DateTime>("DateTo")
+                        .HasColumnType("datetime(6)");
 
-                    b.Navigation("Sender");
+                    b.Property<int>("Days")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Grade")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasDiscriminator().HasValue("SevenDays");
                 });
 
-            modelBuilder.Entity("BusinessLayer.DocumentTeacher", b =>
+            modelBuilder.Entity("BusinessLayer.ThreeDays", b =>
+                {
+                    b.HasBaseType("BusinessLayer.Document");
+
+                    b.Property<DateTime>("DateFrom")
+                        .HasColumnType("datetime(6)")
+                        .HasColumnName("ThreeDays_DateFrom");
+
+                    b.Property<DateTime>("DateTo")
+                        .HasColumnType("datetime(6)")
+                        .HasColumnName("ThreeDays_DateTo");
+
+                    b.Property<int>("Days")
+                        .HasColumnType("int")
+                        .HasColumnName("ThreeDays_Days");
+
+                    b.Property<string>("Grade")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("ThreeDays_Grade");
+
+                    b.HasDiscriminator().HasValue("ThreeDays");
+                });
+
+            modelBuilder.Entity("BusinessLayer.Document", b =>
                 {
                     b.HasOne("BusinessLayer.User", "Receiver")
                         .WithMany()
@@ -354,7 +325,7 @@ namespace DataLayer.Migrations
                         .IsRequired();
 
                     b.HasOne("BusinessLayer.User", "Sender")
-                        .WithMany("DocumentsTeacher")
+                        .WithMany("Documents")
                         .HasForeignKey("SenderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -417,9 +388,7 @@ namespace DataLayer.Migrations
 
             modelBuilder.Entity("BusinessLayer.User", b =>
                 {
-                    b.Navigation("DocumentsHeadMaster");
-
-                    b.Navigation("DocumentsTeacher");
+                    b.Navigation("Documents");
                 });
 #pragma warning restore 612, 618
         }

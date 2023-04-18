@@ -18,22 +18,17 @@ namespace BusinessLayer
         [MaxLength(10)]
         public string Telephone { get; set; }
 
-        // Prevent loops if you are using Net Core Json Serializer!
-        //[JsonIgnore]
-        public ICollection<DocumentTeacher> DocumentsTeacher { get; set; }
-        public ICollection<DocumentHeadMaster> DocumentsHeadMaster { get; set; }
+        public ICollection<Document> Documents { get; set; }
 
         public User()
         {
-            this.DocumentsTeacher = new List<DocumentTeacher>();
-            this.DocumentsHeadMaster = new List<DocumentHeadMaster>();
+            this.Documents = new List<Document>();
         }
 
         public User(string username, string name) : base(username)
         {
             Name = name;
-            this.DocumentsTeacher = new List<DocumentTeacher>();
-            this.DocumentsHeadMaster = new List<DocumentHeadMaster>();
+            this.Documents = new List<Document>();
         }
 
         public User(string username, string email, int age, string name)
@@ -44,8 +39,7 @@ namespace BusinessLayer
             this.NormalizedEmail = email.ToUpper();
             this.Age = age;
             this.Name = name;
-            this.DocumentsTeacher = new List<DocumentTeacher>();
-            this.DocumentsHeadMaster = new List<DocumentHeadMaster>();
+            this.Documents = new List<Document>();
         }
 
         public User(string id, string username, string email, int age, string name)
@@ -54,11 +48,10 @@ namespace BusinessLayer
             this.Id = id;
         }
 
-        public User(string id, string username, string email, int age, string name, ICollection<DocumentTeacher> documentsteach, ICollection<DocumentHeadMaster> documentsheadmaster)
+        public User(string id, string username, string email, int age, string name, ICollection<Document> documents)
             : this(id, username, email, age, name)
         {
-            DocumentsTeacher = documentsteach;
-            DocumentsHeadMaster = documentsheadmaster;
+            Documents = documents;
         }
 
         public static explicit operator User(ValueTask<IdentityUser> v)

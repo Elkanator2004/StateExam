@@ -134,8 +134,7 @@ namespace DataLayer
                 if (result.Succeeded)
                 {
                     User loggedUser = await context.Users
-                        .Include(u => u.DocumentsTeacher)
-                        .Include(u => u.DocumentsHeadMaster)
+                        .Include(u => u.Documents)
                         .FirstOrDefaultAsync(u => u.Id == user.Id);
 
                     return await signInManager.CreateUserPrincipalAsync(loggedUser);
@@ -169,8 +168,7 @@ namespace DataLayer
                 if (useNavigationalProperties)
                 {
                     return await userManager.Users
-                        .Include(u => u.DocumentsHeadMaster)
-                        .Include(u => u.DocumentsTeacher)
+                        .Include(u => u.Documents)
                         .FirstOrDefaultAsync(u => u.Id == key);
                 }
 
@@ -190,8 +188,7 @@ namespace DataLayer
 
                 if (useNavigationalProperties)
                 {
-                    query = query.Include(u => u.DocumentsHeadMaster)
-                        .Include(u => u.DocumentsTeacher);
+                    query = query.Include(u => u.Documents);
                 }
 
                 return await query.ToListAsync();
@@ -219,39 +216,22 @@ namespace DataLayer
 
                     if (useNavigationalProperties)
                     {
-                        List<DocumentTeacher> documentsteach = new List<DocumentTeacher>();
+                        List<Document> documents = new List<Document>();
 
-                        foreach (DocumentTeacher doc in item.DocumentsTeacher)
+                        foreach (Document doc in item.Documents)
                         {
-                            DocumentTeacher docFromDb = await context.DocumentsTeachers.FindAsync(doc.EntryNumber);
+                            Document docFromDb = await context.Documents.FindAsync(doc.EntryNumber);
 
                             if (docFromDb != null)
                             {
-                                documentsteach.Add(docFromDb);
+                                documents.Add(docFromDb);
                             }
                             else
                             {
-                                documentsteach.Add(doc);
+                                documents.Add(doc);
                             }
                         }
-                        user.DocumentsTeacher = documentsteach;
-
-                        List<DocumentHeadMaster> documentsheadmaster = new List<DocumentHeadMaster>();
-
-                        foreach (DocumentHeadMaster doc in item.DocumentsHeadMaster)
-                        {
-                            DocumentHeadMaster docFromDb = await context.DocumentsHeadMaster.FindAsync(doc.EntryNumber);
-
-                            if (docFromDb != null)
-                            {
-                                documentsheadmaster.Add(docFromDb);
-                            }
-                            else
-                            {
-                                documentsheadmaster.Add(doc);
-                            }
-                        }
-                        user.DocumentsHeadMaster = documentsheadmaster;
+                        user.Documents = documents;
                     }
 
                     await context.SaveChangesAsync();
@@ -314,8 +294,7 @@ namespace DataLayer
                 if (useNavigationalProperties)
                 {
                     return await context.Users
-                        .Include(u => u.DocumentsHeadMaster)
-                        .Include(u => u.DocumentsTeacher)
+                        .Include(u => u.Documents)
                         .FirstOrDefaultAsync(u => u.NormalizedUserName == name.ToUpper());
                 }
 

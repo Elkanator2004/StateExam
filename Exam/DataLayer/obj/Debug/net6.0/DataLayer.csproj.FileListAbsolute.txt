@@ -15,3 +15,20 @@ C:\projects\Exam\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
 C:\projects\Exam\DataLayer\obj\Debug\net6.0\DataLayer.pdb
 C:\projects\Exam\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
 C:\projects\Exam\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll
+E:\My Projects\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+E:\My Projects\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.runtimeconfig.json
+E:\My Projects\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.dll
+E:\My Projects\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+E:\My Projects\StateExam\Exam\DataLayer\bin\Debug\net6.0\BusinessLayer.dll
+E:\My Projects\StateExam\Exam\DataLayer\bin\Debug\net6.0\BusinessLayer.pdb
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CopyComplete
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.dll
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
+E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

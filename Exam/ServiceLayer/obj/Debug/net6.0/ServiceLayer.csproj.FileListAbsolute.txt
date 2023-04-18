@@ -1,0 +1,12 @@
+E:\My Projects\StateExam\Exam\ServiceLayer\bin\Debug\net6.0\ServiceLayer.deps.json
+E:\My Projects\StateExam\Exam\ServiceLayer\bin\Debug\net6.0\ServiceLayer.dll
+E:\My Projects\StateExam\Exam\ServiceLayer\bin\Debug\net6.0\ServiceLayer.pdb
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.dll
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ServiceLayer.pdb
+E:\My Projects\StateExam\Exam\ServiceLayer\obj\Debug\net6.0\ref\ServiceLayer.dll

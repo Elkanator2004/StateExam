@@ -8,6 +8,6 @@ namespace DataLayer
 {
     public interface IQueryDb<T, K>
     {
-        bool Exists(K key);
+        public Task<bool> Exists(K key);
     }
 }

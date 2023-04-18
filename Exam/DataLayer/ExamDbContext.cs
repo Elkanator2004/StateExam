@@ -26,7 +26,7 @@ namespace DataLayer
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySql("Server=127.0.0.1;Port=3306;Database=myDataBase;Uid=root;Pwd=Spasepederast1;", ServerVersion.AutoDetect("Server=127.0.0.1;Port=3306;Database=myDataBase;Uid=root;Pwd=Spasepederast1;"), null);
+                optionsBuilder.UseMySql("Server=127.0.0.1;Port=3306;Database=ExamDb;Uid=root;Pwd=;", ServerVersion.AutoDetect("Server=127.0.0.1;Port=3306;Database=ExamDb;Uid=root;Pwd=;"), null);
             }
 
             base.OnConfiguring(optionsBuilder);
@@ -34,20 +34,19 @@ namespace DataLayer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<DocumentTeacher>().HasOne(m => m.Sender).WithMany().HasForeignKey(m => m.SenderId);
-            modelBuilder.Entity<DocumentTeacher>().HasOne(m => m.Receiver).WithMany().HasForeignKey(m => m.ReceiverId);
-            modelBuilder.Entity<User>().HasMany(m => m.DocumentsTeacher).WithOne(m => m.Sender).HasForeignKey(m => m.SenderId).IsRequired(true);
-            modelBuilder.Entity<DocumentHeadMaster>().HasOne(m => m.Sender).WithMany().HasForeignKey(m => m.SenderId);
-            modelBuilder.Entity<DocumentHeadMaster>().HasOne(m => m.Receiver).WithMany().HasForeignKey(m => m.ReceiverId);
-            modelBuilder.Entity<User>().HasMany(m => m.DocumentsHeadMaster).WithOne(m => m.Sender).HasForeignKey(m => m.SenderId).IsRequired(true);
+            modelBuilder.Entity<Document>().HasOne(m => m.Sender).WithMany().HasForeignKey(m => m.SenderId);
+            modelBuilder.Entity<Document>().HasOne(m => m.Receiver).WithMany().HasForeignKey(m => m.ReceiverId);
+            modelBuilder.Entity<User>().HasMany(m => m.Documents).WithOne(m => m.Sender).HasForeignKey(m => m.SenderId).IsRequired(true);
+            
             modelBuilder.Entity<User>().HasIndex(u => u.Name).IsUnique();
+
+            modelBuilder.Entity<SevenDays>();
+            modelBuilder.Entity<ThreeDays>();
 
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<DocumentHeadMaster> DocumentsHeadMaster { get; set; }
-
-        public DbSet<DocumentTeacher> DocumentsTeachers { get; set; }
+        public DbSet<Document> Documents { get; set; }
 
     }
 }
