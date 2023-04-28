@@ -208,11 +208,8 @@ namespace DataLayer
                 if (user != null)
                 {
                     user.UserName = item.UserName;
-                    user.NormalizedUserName = item.UserName.ToUpperInvariant();
                     user.Age = item.Age;
                     user.Name = item.Name;
-                    user.Adress = item.Adress;
-                    user.Telephone = item.Telephone;
 
                     if (useNavigationalProperties)
                     {
@@ -263,11 +260,11 @@ namespace DataLayer
             }
         }
 
-        public async Task DeleteUserByNameAsync(string name)
+        public async Task DeleteUserByUsernameAsync(string username)
         {
             try
             {
-                User user = await FindUserByNameAsync(name);
+                User user = await FindUserByNameAsync(username);
 
                 if (user == null)
                 {

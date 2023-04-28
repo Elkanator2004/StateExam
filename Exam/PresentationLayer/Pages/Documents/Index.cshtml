@@ -1,0 +1,66 @@
+﻿@page "/document/index"
+@model PresentationLayer.Pages.Documents.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Document[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Document[0].DateSigned)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Document[0].DateReceived)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Document[0].Sender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Document[0].Receiver)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Document[0].Type)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Document) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateSigned)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateReceived)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sender.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Receiver.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.EntryNumber">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.EntryNumber">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.EntryNumber">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

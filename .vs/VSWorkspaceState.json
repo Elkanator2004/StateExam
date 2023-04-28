@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Exam",
+    "\\Exam\\DataLayer",
+    "\\Exam\\PresentationLayer"
   ],
+  "SelectedNode": "\\Exam\\Exam.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,18 @@
+﻿@page "/login"
+@using Microsoft.AspNetCore.Components
+@using PresentationLayer.Pages;
+@using PresentationLayer.Services;
+@using BusinessLayer;
+@using ServiceLayer;
+@using Microsoft.Extensions.Logging;
+@inject IdentityManager identityManager;
+@inject ErrorModel errorModel;
+@inject ILogger<User> logger;
+@inject NavigationManager navigationManager;
+@inject CustomAuthenticationStateProvider authenticationStateProvider;
+
+<h3>Login</h3>
+
+@code {
+    
+}

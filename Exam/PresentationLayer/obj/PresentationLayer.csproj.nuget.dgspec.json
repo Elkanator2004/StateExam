@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Projects\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj": {}
+    "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,8 +58,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -70,25 +67,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\My Projects\\StateExam\\Exam\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\StateExam\\Exam\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "E:\\My Projects\\StateExam\\Exam\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\StateExam\\Exam\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,15 +92,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
@@ -131,13 +126,13 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
             }
@@ -148,8 +143,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -158,25 +152,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\My Projects\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj": {
+    "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "E:\\My Projects\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\StateExam\\Exam\\PresentationLayer\\obj\\",
+        "projectPath": "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\PresentationLayer\\PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,18 +177,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "E:\\My Projects\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj": {
-                "projectPath": "E:\\My Projects\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj"
+              "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\Elkanator2004\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj"
               }
             }
           }
@@ -210,9 +202,39 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [
@@ -221,8 +243,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -234,25 +255,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\My Projects\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj",
         "projectName": "ServiceLayer",
-        "projectPath": "E:\\My Projects\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\StateExam\\Exam\\ServiceLayer\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\ServiceLayer\\ServiceLayer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\ServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -260,18 +280,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "E:\\My Projects\\StateExam\\Exam\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "E:\\My Projects\\StateExam\\Exam\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -285,14 +304,27 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -301,7 +333,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

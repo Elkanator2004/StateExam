@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\StateExam\\Exam\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Elkanator2004\\StateExam\\Exam\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,8 +58,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -70,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

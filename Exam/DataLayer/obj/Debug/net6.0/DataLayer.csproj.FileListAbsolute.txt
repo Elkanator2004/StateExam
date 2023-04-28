@@ -32,3 +32,20 @@ E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
 E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.pdb
 E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
 E:\My Projects\StateExam\Exam\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.runtimeconfig.json
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CopyComplete
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.dll
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
+C:\Users\user\Source\Repos\Elkanator2004\StateExam\Exam\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

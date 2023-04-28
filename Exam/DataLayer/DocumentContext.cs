@@ -105,6 +105,7 @@ namespace DataLayer
                 {
                     (documentFromDb as SevenDays).Days = (item as SevenDays).Days;
                     (documentFromDb as SevenDays).DateFrom = (item as SevenDays).DateFrom;
+                    (documentFromDb as SevenDays).DateTo = (item as SevenDays).DateTo;
                 }
 
                 if (useNavigationalProperties)
@@ -120,13 +121,9 @@ namespace DataLayer
                         sender.Id= senderFromDb.Id;
                         receiver.Id= receiverFromDb.Id;
                     }
-                    else if (senderFromDb == null)
+                    else
                     {
-                        sender = senderFromDb;
-                    }
-                    else if(receiverFromDb == null)
-                    {
-                        receiver = receiverFromDb;
+                        throw new ArgumentException("There must be sender and receiver!");
                     }
 
                     documentFromDb.Sender = sender;

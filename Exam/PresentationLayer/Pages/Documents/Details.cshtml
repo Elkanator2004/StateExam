@@ -1,0 +1,55 @@
+﻿@page
+@model PresentationLayer.Pages.Documents.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Document</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Document.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document.DateSigned)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Document.DateSigned)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document.DateReceived)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Document.DateReceived)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document.Sender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Document.Sender.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document.Receiver)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Document.Receiver.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Document.Type)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Document?.EntryNumber">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

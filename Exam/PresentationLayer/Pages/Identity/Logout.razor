@@ -1,0 +1,60 @@
+﻿@page "/logout"
+
+@using PresentationLayer.Pages;
+@using BusinessLayer;
+@using ServiceLayer;
+@using System.Security.Principal;
+@using System.Security.Claims;
+@using PresentationLayer.Services;
+@using Microsoft.Extensions.Logging;
+@inject ErrorModel errorModel;
+@inject ILogger<User> logger;
+@inject NavigationManager navigationManager;
+@inject IdentityManager identityManager;
+@inject CustomAuthenticationStateProvider authenticationStateProvider;
+
+<AuthorizeView Roles="User, Admin">
+
+
+<h3>LogOut</h3>
+
+<button type="submit" @onclick="@LogOutMethod"> Log out</button>
+
+
+</AuthorizeView>
+@code {
+    private ClaimsPrincipal userClaims;
+    private AuthenticationState authenticationState;
+
+    protected async Task LogOutMethod()
+    {
+        try
+        {
+            authenticationState = await authenticationStateProvider.GetAuthenticationStateAsync();
+            userClaims = authenticationState.User;
+            if (userClaims is not null && userClaims.Identity.IsAuthenticated)
+            {
+                logger.Log(LogLevel.Information, $"User {userClaims.Identity.Name} successfully logged out of the application.!");
+
+                userClaims = await identityManager.LogOutUserAsync(userClaims);
+                await authenticationStateProvider.RemoveClaimFromSessionStorageAsync();
+
+                navigationManager.NavigateTo("/", true); // Rerender the navigation menu!
+            }
+            else
+            {
+                errorModel.Code = "Logout";
+                errorModel.Description = "User came to this page but he/she is not logged in!";
+                logger.Log(LogLevel.Error, errorModel.Description);
+            }
+        }
+        catch (Exception ex) // Handle concrete exceptions first!
+        {
+            errorModel.Code = "DB";
+            errorModel.Description = ex.Message;
+            logger.Log(LogLevel.Error, ex.Message);
+        }
+
+       // await base.OnInitializedAsync();
+    }
+}

@@ -9,6 +9,16 @@
 
     <main>
         <div class="top-row px-4">
+            <AuthorizeView Roles="Administrator, Student, Teacher, HeadMaster">
+                <Authorized>
+                    <NavLink href="/logout">Logout</NavLink>
+                </Authorized>
+
+                <NotAuthorized>
+                    <NavLink href="/login">Login</NavLink>
+                    <NavLink href="/register">Register</NavLink>
+                </NotAuthorized>
+            </AuthorizeView>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
 

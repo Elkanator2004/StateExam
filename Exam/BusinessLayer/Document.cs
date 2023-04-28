@@ -35,6 +35,8 @@ namespace BusinessLayer
 
         public User Receiver { get; set; }
 
+        public DocumentType Type { get; set; }
+
         public Document()
         {
 
